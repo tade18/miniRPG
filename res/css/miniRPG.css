@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url("/res/IMG/background.jpg");
+    background-repeat: no-repeat;
+}
+#info{
+    text-align: center;
+    color: blue;
+}
+#fightWindow{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#player1Overview{
+    width: 500px;
+    height: 500px;
+    background-color: saddlebrown;
+    margin: auto;
+    margin-top: 10%;
+    border: 5px black solid;
+    padding: 0.5em;
+}
+
+#attack{
+    background-color: orange;
+    border: 1px black solid;
+}
+
+#player2Overview{
+    width: 500px;
+    height: 500px;
+    background-color: saddlebrown;
+    margin: auto;
+    margin-top: 10%;
+    border: 5px black solid;
+    padding: 0.5em;
+}
+
+#player1Overview img{
+    width: 60%;
+    height: auto;
+}
+
+#player2Overview img{
+    width: 60%;
+    height: auto;
+}
+
+#hp1 , #hp2{
+    color: yellow;
+    font-size: large;
+}
+
+#dmg1 , #dmg2{
+    color: orangered;
+    font-size: large;
+}
