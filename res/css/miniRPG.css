@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
 }
 body{
     background-image: url("../IMG/background.webp");
@@ -8,6 +9,7 @@ body{
     background-size: cover;
     margin: 0;
 }
+/*Status*/
 #info{
     text-align: center;
     color: blue;

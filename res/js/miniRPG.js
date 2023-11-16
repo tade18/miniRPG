@@ -1,8 +1,8 @@
 const hp1 = document.getElementById("hp1");
 const hp2 = document.getElementById("hp2");
 const attack = document.getElementById("attack");
-const audio = new Audio('./audio/audio.mp3');
-const sword_sound = new Audio('./audio/sword_sound.mp3');
+var audio = new Audio('../audio/back_music.mp3');
+var sword_sound = new Audio('../audio/sword_sound.mp3');
 const info = document.getElementById("info");
 let health2 = document.getElementById("health2");
 let health1 = document.getElementById("health1");
@@ -25,7 +25,6 @@ let pTwoAttack
 //damage
 let dmgO = 6;
 let dmgT = 12;
-
 
 
 hideElement(attack)
