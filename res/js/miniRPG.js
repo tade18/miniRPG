@@ -18,11 +18,15 @@ let dmgO = 14;
 let dmgT = 13;
 
 attack.onclick = () => {
-    if(hpPT > 0){
+    if(hpPT >= 0){
     console.log("P1: útok");
     hpPT -= dmgO;
     health.value -= dmgO;
     hp2.innerText="Health:" +hpPT;
+    if (hpPT<=0){
+    console.log("P1: vyhrává souboj")
+    info.innerText="Status: Kitty vyhrává...";
+    info.style.color="green";
+    }
     }
 }
-
