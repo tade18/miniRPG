@@ -3,8 +3,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-    background-image: url("../IMG/background.png");
+    background-image: url("../IMG/background.webp");
     background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
 }
 #info{

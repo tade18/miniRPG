@@ -1,8 +1,8 @@
 const hp1 = document.getElementById("hp1");
 const hp2 = document.getElementById("hp2");
 const attack = document.getElementById("attack");
-const audio = new Audio('../audio/audio.mp3');
-const sword_sound = new Audio('../audio/sword_sound.mp3');
+const audio = new Audio('./audio/audio.mp3');
+const sword_sound = new Audio('./audio/sword_sound.mp3');
 const info = document.getElementById("info");
 let health2 = document.getElementById("health2");
 let health1 = document.getElementById("health1");
