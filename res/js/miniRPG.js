@@ -9,7 +9,6 @@ let health1 = document.getElementById("health1");
 const dmg1 = document.getElementById("dmg1");
 const dmg2 = document.getElementById("dmg2");
 const startButton = document.getElementById("StartButton");
-const getRandomNumber = (minimum, maximum) => Math.floor(Math.random()* (8 - 4));
 
 
 //schová element
@@ -26,7 +25,7 @@ let hpPT = 1000;
 //attack protivníka
 let pTwoAttack
 //damage
-let dmgO = getRandomNumber();
+let dmgO = 6;
 let dmgT = 12;
 
 
@@ -59,8 +58,10 @@ attack.onclick = () => {
     console.log("P1: útok"+ dmgO);
     hpPT -= dmgO;
     health2.value -= dmgO;
+    hideElement(attack);
     hp2.innerText="Health:   " +hpPT;
     sword_sound.play();
+    setTimeout(() => {showElement(attack);}, 100)
     if (hpPT<=0){
     console.log("P1: vyhrává souboj")
     info.innerText="Status: Kitty vyhrává souboj!";
