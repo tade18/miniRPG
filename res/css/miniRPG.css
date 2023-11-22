@@ -1,15 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Shadows+Into+Light&display=swap');
+
 *{
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Knewave', cursive;
     user-select: none;
 }
+/*Index*/
+#index_menu{
+    width: 15%;
+    height: 700px;
+    background-color: brown;
+    margin: 10px;
+}
+#index_menu a{
+    display: block;
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+    background-color: rgb(255, 153, 0);
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/*Fight*/
 body{
     background-image: url("../IMG/background.webp");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
 }
-/*Status*/
 #info{
     text-align: center;
     color: blue;
@@ -35,12 +61,13 @@ body{
 
 #player1Overview{
     width: 500px;
-    height: 560px;
+    height: 550px;
     background-color: saddlebrown;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 1%;
     border: 5px black solid;
-    padding: 0.5em;
+    padding: 0.25em;
+    font-size: 15px;
 }
 
 #attack{
@@ -53,32 +80,33 @@ body{
 }
 #player2Overview{
     width: 500px;
-    height: 560px;
+    height: 550px;
     background-color: saddlebrown;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 1%;
     border: 5px black solid;
-    padding: 0.5em;
+    padding: 0.25em;
+    font-size: 15px;
 }
 
 #player1Overview img{
-    width: 60%;
+    width: 50%;
     height: auto;
 }
 
 #player2Overview img{
-    width: 60%;
+    width: 50%;
     height: auto;
 }
 
 #hp1 , #hp2{
     color: yellow;
-    font-size: large;
+    font-size: 20px;
 }
 
 #dmg1 , #dmg2{
     color: orangered;
-    font-size: large;
+    font-size: 20px;
 }
 
 progress{

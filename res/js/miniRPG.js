@@ -9,6 +9,9 @@ let health1 = document.getElementById("health1");
 const dmg1 = document.getElementById("dmg1");
 const dmg2 = document.getElementById("dmg2");
 const startButton = document.getElementById("StartButton");
+const getRandomNumber = (minimum, maximum) => Math.floor(Math.random()* (8 - 4));
+
+
 //schová element
 const hideElement = (element) => {
     element.style.display = "none";
@@ -23,7 +26,7 @@ let hpPT = 1000;
 //attack protivníka
 let pTwoAttack
 //damage
-let dmgO = 6;
+let dmgO = getRandomNumber();
 let dmgT = 12;
 
 
@@ -39,7 +42,7 @@ startButton.onclick = () => {
         console.log("P2: útok")
         hpPO -= dmgT;
         health1.value -= dmgT;
-        hp1.innerText="Health:"+hpPO;
+        hp1.innerText="Health:   "+hpPO;
         if(hpPO <= 0){
             console.log("P2: vyhrává souboj")
             info.innerText="Status: Slovák vyhrává souboj!";
@@ -53,10 +56,10 @@ startButton.onclick = () => {
 
 attack.onclick = () => {
     if(hpPT >= 0){
-    console.log("P1: útok");
+    console.log("P1: útok"+ dmgO);
     hpPT -= dmgO;
     health2.value -= dmgO;
-    hp2.innerText="Health:" +hpPT;
+    hp2.innerText="Health:   " +hpPT;
     sword_sound.play();
     if (hpPT<=0){
     console.log("P1: vyhrává souboj")
