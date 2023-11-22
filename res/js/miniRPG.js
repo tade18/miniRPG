@@ -30,6 +30,9 @@ let dmgT = 12;
 
 
 hideElement(attack)
+
+
+
 //zahájení hry
 startButton.onclick = () => {
     audio.play();
@@ -61,7 +64,7 @@ attack.onclick = () => {
     hideElement(attack);
     hp2.innerText="Health:   " +hpPT;
     sword_sound.play();
-    setTimeout(() => {showElement(attack);}, 100)
+    setTimeout(() => {showElement(attack);}, 200)
     if (hpPT<=0){
     console.log("P1: vyhrává souboj")
     info.innerText="Status: Kitty vyhrává souboj!";
