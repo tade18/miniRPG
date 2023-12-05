@@ -3,6 +3,8 @@ const hp2 = document.getElementById("hp2");
 const attack = document.getElementById("attack");
 var audio = new Audio('../audio/back_music.mp3');
 var sword_sound = new Audio('../audio/sword_sound.wav');
+var sword_sound2 = new Audio('../audio/sword_sound2.mp3');
+var death_sound = new Audio('../audio/end_sound.mp3')
 const info = document.getElementById("info");
 let health2 = document.getElementById("health2");
 let health1 = document.getElementById("health1");
@@ -46,12 +48,14 @@ startButton.onclick = () => {
     clearInterval(pTwoAttack);
     pTwoAttack = setInterval(()=>{
         console.log("P2: útok")
+        sword_sound2.play();
         hpPO -= dmgT;
         health1.value -= dmgT;
         hp1.innerText="Health:   "+hpPO;
         if(hpPO <= 0){
             console.log("P2: vyhrává souboj")
             info.innerText="Status: Slovák vyhrává souboj!";
+            death_sound.play();
             info.style.color="red";
             clearInterval(pTwoAttack);
             hideElement(attack);
@@ -72,6 +76,7 @@ attack.onclick = () => {
     if (hpPT<=0){
     console.log("P1: vyhrává souboj")
     info.innerText="Status: Kitty vyhrává souboj!";
+    death_sound.play();
     clearInterval(pTwoAttack);
     hideElement(attack);
     info.style.color="green";
