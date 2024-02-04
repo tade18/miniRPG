@@ -1,3 +1,2 @@
 # miniRPG
-https://tade18.github.io/miniRPG/
-Pomoz kočičce porazit Slováka
+Just for fun! My second attempt for making something in JS.
